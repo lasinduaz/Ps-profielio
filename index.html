@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Professional Skills Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts for a nicer font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="nav-brand">Home</a>
+      <ul>
+        <li><a href="#lectures">Lectures</a></li>
+        <li><a href="#about">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="welcome-section">
+    <h1 class="fade-in">Your Name</h1>
+    <p class="fade-in">Your Registration ID</p>
+    <h2 class="fade-in">Professional Skills Portfolio</h2>
+  </section>
+
+  <main>
+    <section id="lectures" class="content-section">
+      <div class="container">
+        <h2>Lectures</h2>
+        <div class="lecture-grid">
+          <!-- We will create these HTML files in the next step -->
+          <a href="lecture1.html" class="lecture-card">
+            <h3>Introduction to Professional Skills</h3>
+            <p>03/06/2025</p>
+          </a>
+          <a href="lecture2.html" class="lecture-card">
+            <h3>CV Writing</h3>
+            <p>17/06/2025</p>
+          </a>
+          <a href="lecture3.html" class="lecture-card">
+            <h3>Portfolio Management</h3>
+            <p>24/06/2025</p>
+          </a>
+          <!-- Add the rest of the lectures here following the same pattern -->
+          <a href="#" class="lecture-card">
+            <h3>More coming soon...</h3>
+            <p>&nbsp;</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="content-section-dark">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img src="https://via.placeholder.com/150" alt="Your Photo" class="profile-photo">
+          <div class="about-text">
+            <h3>Your Name</h3>
+            <p>Your Registration ID</p>
+            <p>A brief bio about yourself. Talk about your interests, your professional goals, and what you've learned during this module. This is your space to make a personal introduction.</p>
+            <div class="social-links">
+              <!-- Replace '#' with your actual links -->
+              <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
+              <a href="mailto:your.email@example.com" title="Email">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
