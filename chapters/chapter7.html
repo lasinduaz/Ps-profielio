@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chapter 7 – Interview Skills</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-slide { opacity: 0; transform: translateY(20px); animation: fadeSlide 1s ease-out forwards; }
+    @keyframes fadeSlide { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
 </head>
+
 <body class="bg-gray-50 font-sans text-gray-900">
 
   <!-- Navbar -->
-  <nav class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white p-4 shadow-md">
+  <nav class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white p-4 shadow-md fixed top-0 w-full z-10">
     <div class="container mx-auto flex justify-between items-center">
       <div class="font-bold text-lg">Professional Skills</div>
       <div class="space-x-6">
@@ -21,125 +28,124 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-12 text-center">
+  <header class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-16 text-center mt-16 fade-slide">
     <h1 class="text-3xl font-bold">Chapter 7 – Interview Skills</h1>
-    <p class="mt-2 text-lg">Best practices for preparing and succeeding in job interviews</p>
+    <p class="mt-2 text-lg" style="animation-delay:0.2s;">Best practices for preparing and succeeding in job interviews</p>
   </header>
 
-  <!-- Content Section -->
-  <main class="container mx-auto px-4 py-10">
-    <div class="bg-white rounded-2xl shadow-lg p-8 space-y-6">
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-10 space-y-8">
 
-      <section>
-        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Introduction</h2>
-        <p>
-          A job interview is a formal conversation between a job applicant and a company representative.
-          It’s a two-way discussion where the company assesses your suitability, and you learn more about the role.
-        </p>
-      </section>
+    <!-- Introduction -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Introduction</h2>
+      <p>
+        A job interview is a formal conversation between a job applicant and a company representative.
+        It’s a two-way discussion where the company assesses your suitability, and you learn more about the role.
+      </p>
+    </section>
 
-      <section>
-        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Interview Strategy</h2>
-        <p>Best strategy is preparing answers for these key questions:</p>
-        <ul class="list-disc list-inside space-y-2">
-          <li>What do I want the interviewer to know about myself?</li>
-          <li>What disadvantages or weaknesses do I want to minimize?</li>
-          <li>What do I need to know about this job or this organization?</li>
-        </ul>
-      </section>
+    <!-- Interview Strategy -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide" style="animation-delay:0.2s;">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Interview Strategy</h2>
+      <p>Best strategy is preparing answers for these key questions:</p>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>What do I want the interviewer to know about myself?</li>
+        <li>What disadvantages or weaknesses do I want to minimize?</li>
+        <li>What do I need to know about this job or this organization?</li>
+      </ul>
+    </section>
 
-      <section>
-        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Effective Communication</h2>
-        <p>
-          Communication is more than words: attitude, style, and tone matter. Mastering these shows confidence and professionalism.
-        </p>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Non-verbal communication</li>
-          <li>Listening</li>
-          <li>Responding</li>
-          <li>Questioning</li>
-        </ul>
-        <p>Active listening and both verbal & non-verbal cues are key during interviews.</p>
-      </section>
+    <!-- Effective Communication -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide" style="animation-delay:0.4s;">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Effective Communication</h2>
+      <p>
+        Communication is more than words: attitude, style, and tone matter. Mastering these shows confidence and professionalism.
+      </p>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Non-verbal communication</li>
+        <li>Listening</li>
+        <li>Responding</li>
+        <li>Questioning</li>
+      </ul>
+      <p class="mt-2">Active listening and both verbal & non-verbal cues are key during interviews.</p>
+    </section>
 
-      <!-- Outfit Tips Section -->
-      <section>
-        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Outfits for Interview</h2>
+    <!-- Outfit Tips -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide" style="animation-delay:0.6s;">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Outfits for Interview</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-          <!-- Men -->
-          <div class="overflow-hidden rounded-xl shadow-md p-4">
-            <h3 class="text-xl font-semibold mb-2">For Men</h3>
-            <p class="font-semibold text-green-600">DO:</p>
-            <ul class="list-disc list-inside mb-2">
-              <li>Casual yet polished: neat outfit, polished shoes, optional blazer</li>
-              <li>Business Professional: tailored suit, crisp shirt, tie</li>
-            </ul>
-            <p class="font-semibold text-red-600">DON'T:</p>
-            <ul class="list-disc list-inside">
-              <li>Messy or untucked clothes</li>
-              <li>Poorly fitting outfits</li>
-              <li>Overly casual attire</li>
-            </ul>
-            <div class="mt-4">
-              <img src="../assets/images/Attire_for_men.png" alt="Men Outfit Tips"
-                class="w-full object-cover rounded-lg shadow-md">
-            </div>
-          </div>
-
-          <!-- Women -->
-          <div class="overflow-hidden rounded-xl shadow-md p-4">
-            <h3 class="text-xl font-semibold mb-2">For Women</h3>
-            <p class="font-semibold text-green-600">DO:</p>
-            <ul class="list-disc list-inside mb-2">
-              <li>Casual but polished outfit or business suit</li>
-              <li>Freshly pressed clothes with well-fitted attire</li>
-            </ul>
-            <p class="font-semibold text-red-600">DON'T:</p>
-            <ul class="list-disc list-inside">
-              <li>Untucked, messy clothes or poorly fitting suit</li>
-              <li>Mismatched shoes or socks</li>
-              <li>Messy hair or overly casual look</li>
-            </ul>
-            <div class="mt-4">
-              <img src="../assets/images/Attire_for_women.png" alt="Women Outfit Tips"
-                class="w-full object-cover rounded-lg shadow-md">
-            </div>
-          </div>
-
+        <!-- Men Card -->
+        <div class="bg-gray-50 rounded-xl shadow-md p-4 fade-slide">
+          <h3 class="text-xl font-semibold mb-2">For Men</h3>
+          <p class="font-semibold text-green-600">DO:</p>
+          <ul class="list-disc list-inside mb-2">
+            <li>Casual yet polished: neat outfit, polished shoes, optional blazer</li>
+            <li>Business Professional: tailored suit, crisp shirt, tie</li>
+          </ul>
+          <p class="font-semibold text-red-600">DON'T:</p>
+          <ul class="list-disc list-inside">
+            <li>Messy or untucked clothes</li>
+            <li>Poorly fitting outfits</li>
+            <li>Overly casual attire</li>
+          </ul>
+          <img src="../assets/images/Attire_for_men.png" alt="Men Outfit Tips"
+            class="w-full object-cover rounded-lg shadow-md mt-4">
         </div>
-      </section>
 
-      <section>
-        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Tips & 6 C’s of Communication</h2>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Pay attention to the interviewer</li>
-          <li>Show that you are listening</li>
-          <li>Seek clarification if you don’t understand</li>
-          <li>6 C’s of Effective Communication:
-            <ul class="list-disc list-inside ml-5">
-              <li>Clear</li>
-              <li>Concise</li>
-              <li>Correct</li>
-              <li>Complete</li>
-              <li>Concrete</li>
-              <li>Courteous</li>
-            </ul>
-          </li>
-          <li>Other skills: Language support, describing strengths, weaknesses, and work experience</li>
-        </ul>
-      </section>
+        <!-- Women Card -->
+        <div class="bg-gray-50 rounded-xl shadow-md p-4 fade-slide" style="animation-delay:0.2s;">
+          <h3 class="text-xl font-semibold mb-2">For Women</h3>
+          <p class="font-semibold text-green-600">DO:</p>
+          <ul class="list-disc list-inside mb-2">
+            <li>Casual but polished outfit or business suit</li>
+            <li>Freshly pressed clothes with well-fitted attire</li>
+          </ul>
+          <p class="font-semibold text-red-600">DON'T:</p>
+          <ul class="list-disc list-inside">
+            <li>Untucked, messy clothes or poorly fitting suit</li>
+            <li>Mismatched shoes or socks</li>
+            <li>Messy hair or overly casual look</li>
+          </ul>
+          <img src="../assets/images/Attire_for_women.png" alt="Women Outfit Tips"
+            class="w-full object-cover rounded-lg shadow-md mt-4">
+        </div>
 
-      <!-- Next Chapter -->
-      <div class="text-right mt-8">
-        <a href="chapter8.html"
-          class="inline-block px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-700 text-white rounded-lg shadow hover:opacity-90 transition">
-          Next Chapter →
-        </a>
       </div>
+    </section>
 
+    <!-- Tips & 6 C's of Communication -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide" style="animation-delay:0.8s;">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Tips & 6 C’s of Communication</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Pay attention to the interviewer</li>
+        <li>Show that you are listening</li>
+        <li>Seek clarification if you don’t understand</li>
+        <li>6 C’s of Effective Communication:
+          <ul class="list-disc list-inside ml-5">
+            <li>Clear</li>
+            <li>Concise</li>
+            <li>Correct</li>
+            <li>Complete</li>
+            <li>Concrete</li>
+            <li>Courteous</li>
+          </ul>
+        </li>
+        <li>Other skills: Language support, describing strengths, weaknesses, and work experience</li>
+      </ul>
+    </section>
+
+    <!-- Next Chapter Button -->
+    <div class="text-right mt-8 fade-slide" style="animation-delay:1s;">
+      <a href="chapter8.html"
+        class="inline-block px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-700 text-white rounded-lg shadow hover:opacity-90 transition">
+        Next Chapter →
+      </a>
     </div>
+
   </main>
+
 </body>
+
 </html>
