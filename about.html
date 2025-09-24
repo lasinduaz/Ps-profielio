@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
+  <!-- Favicon / Tab Icon -->
+  <link rel="icon" type="image/gif" href="assets/icons/mortarboard.gif">
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-df4UqWz6jXnZr6fGfppZnQJj7ZkDEv6F1mj+2PSsRQ8l0+9XUP7rXyMCuW5y3vB7RzV+kLwb4n85qjD2lZV0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    html { scroll-behavior: smooth; }
-    .fade-slide { opacity: 0; transform: translateY(20px); animation: fadeSlide 1s ease-out forwards; }
-    @keyframes fadeSlide { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .fade-slide {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeSlide 1s ease-out forwards;
+    }
+
+    @keyframes fadeSlide {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
+
 <body class="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 font-sans min-h-screen flex flex-col">
 
   <!-- Navbar -->
@@ -36,22 +59,21 @@
     <section class="container mx-auto px-4 py-12 fade-slide">
       <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center space-y-6 md:w-2/3 mx-auto">
         <!-- Profile Picture -->
-        <img 
-          src="../assets/images/profile.jpg" 
-          alt="Profile Picture" 
-          class="w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 max-w-[160px] max-h-[160px] rounded-full shadow-lg object-cover"
-        >
-        
+        <img src="../assets/images/profile.jpg" alt="Profile Picture"
+          class="w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 max-w-[160px] max-h-[160px] rounded-full shadow-lg object-cover">
+
         <!-- Full Name -->
         <h3 class="text-3xl font-bold text-purple-700">L.A.A. Samarajeewa</h3>
-        
+
         <!-- Registration ID -->
         <p class="text-gray-700 text-lg">Registration ID: SA23416680</p>
-        
+
         <!-- Social Links -->
         <div class="flex space-x-6 mt-4">
-          <a href="https://www.linkedin.com/in/lasinduanj" target="_blank" class="text-blue-600 text-3xl hover:text-blue-800 transition"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:lasinduaz@gmail.com" class="text-red-600 text-3xl hover:text-red-800 transition"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/lasinduanj" target="_blank"
+            class="text-blue-600 text-3xl hover:text-blue-800 transition"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:lasinduaz@gmail.com" class="text-red-600 text-3xl hover:text-red-800 transition"><i
+              class="fas fa-envelope"></i></a>
         </div>
       </div>
     </section>
@@ -63,4 +85,5 @@
   </footer>
 
 </body>
+
 </html>
