@@ -3,77 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Professional Skills Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Google Fonts for a nicer font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <title>Professional Skills Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navbar -->
   <header>
-    <nav>
-      <a href="index.html" class="nav-brand">Home</a>
+    <nav class="navbar">
+      <h2 class="logo">Professional Skills</h2>
       <ul>
-        <li><a href="#lectures">Lectures</a></li>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chapters/chapter1.html">Chapters</a></li>
+        <li><a href="about.html">About Me</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="welcome-section">
-    <h1 class="fade-in">Lasindu Anjana</h1>
-    <p class="fade-in">SA23416680</p>
-    <h2 class="fade-in">Professional Skills Portfolio</h2>
-  </section>
-
-  <main>
-    <section id="lectures" class="content-section">
-      <div class="container">
-        <h2>Lectures</h2>
-        <div class="lecture-grid">
-          <!-- We will create these HTML files in the next step -->
-          <a href="lecture1.html" class="lecture-card">
-            <h3>Introduction to Professional Skills</h3>
-            <p>03/06/2025</p>
-          </a>
-          <a href="lecture2.html" class="lecture-card">
-            <h3>CV Writing</h3>
-            <p>17/06/2025</p>
-          </a>
-          <a href="lecture3.html" class="lecture-card">
-            <h3>Portfolio Management</h3>
-            <p>24/06/2025</p>
-          </a>
-          <!-- Add the rest of the lectures here following the same pattern -->
-          <a href="#" class="lecture-card">
-            <h3>More coming soon...</h3>
-            <p>&nbsp;</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="content-section-dark">
-      <div class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-          <img src="https://via.placeholder.com/150" alt="Your Photo" class="profile-photo">
-          <div class="about-text">
-            <h3>Lasindu Anjana</h3>
-            <p>SA23416680</p>
-            <p>Just a Y2S2 Stduent.</p>
-            <div class="social-links">
-              <!-- Replace '#' with your actual links -->
-              <a href="https://www.linkedin.com/in/lasinduanj" target="_blank" title="LinkedIn">LinkedIn</a>
-              <a href="mailto:lasinduaz@gmail.com" title="Email">Email</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Welcome Section -->
+  <main class="welcome">
+    <h1>Hello, I’m <span class="highlight">[Your Name]</span></h1>
+    <p class="tagline">Registration ID: [Your ID]</p>
+    <h2 class="subtitle">✨ A Journey Through My Professional Skills ✨</h2>
+    <a href="chapters/chapter1.html" class="start-btn">Start Exploring →</a>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
