@@ -1,0 +1,62 @@
+File path: portfolio-website/about.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-df4UqWz6jXnZr6fGfppZnQJj7ZkDEv6F1mj+2PSsRQ8l0+9XUP7rXyMCuW5y3vB7RzV+kLwb4n85qjD2lZV0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-slide { opacity: 0; transform: translateY(20px); animation: fadeSlide 1s ease-out forwards; }
+    @keyframes fadeSlide { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-blue-600 to-purple-600 shadow fixed top-0 w-full z-10">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-extrabold tracking-tight text-white">Professional Skills</h1>
+      <ul class="flex space-x-6 text-white font-medium">
+        <li><a href="chapters/Chapters Index.html" class="hover:text-yellow-300 transition">Chapters</a></li>
+        <li><a href="../index.html" class="hover:text-yellow-300 transition">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="py-28 text-center fade-slide">
+    <h2 class="text-5xl font-extrabold text-blue-700">About Me</h2>
+    <p class="text-lg text-gray-700 mt-4">Learn more about me and my professional journey.</p>
+  </section>
+
+  <!-- Profile Section -->
+  <section class="container mx-auto px-4 py-12 fade-slide">
+    <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center space-y-6 md:w-2/3 mx-auto">
+      <!-- Profile Picture -->
+      <img src="../assets/images/profile.jpg" alt="Profile Picture" class="w-40 h-40 rounded-full shadow-lg">
+      
+      <!-- Full Name -->
+      <h3 class="text-3xl font-bold text-purple-700">L.A.A. Samarajeewa</h3>
+      
+      <!-- Registration ID -->
+      <p class="text-gray-700 text-lg">Registration ID: SA23416680</p>
+      
+      <!-- Social Links -->
+      <div class="flex space-x-6 mt-4">
+        <a href="https://www.linkedin.com/in/lasinduanj" target="_blank" class="text-blue-600 text-3xl hover:text-blue-800 transition"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:lasinduaz@gmail.com" class="text-red-600 text-3xl hover:text-red-800 transition"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-600 to-purple-600 py-6 text-center mt-20">
+    <p class="text-white">&copy; 2025 Professional Skills Portfolio</p>
+  </footer>
+
+</body>
+</html>

@@ -4,29 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professional Skills Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fadeInUp { animation: fadeInUp 1s ease-out forwards; }
+  </style>
 </head>
-<body>
+<body class="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 text-gray-800 font-sans">
   <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <h2 class="logo">Professional Skills</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="chapters/chapter1.html">Chapters</a></li>
-        <li><a href="about.html">About Me</a></li>
+  <nav class="bg-gradient-to-r from-blue-600 to-purple-600 shadow fixed top-0 w-full z-10">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-extrabold tracking-tight text-white">Professional Skills</h1>
+      <ul class="flex space-x-6 text-white font-medium">
+        <li><a href="index.html" class="hover:text-yellow-300 transition">Home</a></li>
+        <li><a href="chapters/chapter1.html" class="hover:text-yellow-300 transition">Chapters</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300 transition">About Me</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <!-- Welcome Section -->
-  <main class="welcome">
-    <h1>Hello, I’m <span class="highlight">Lasind Anjana</span></h1>
-    <p class="tagline">Registration ID: SA23416680</p>
-    <h2 class="subtitle">✨ A Journey Through My Professional Skills ✨</h2>
-    <a href="chapters/chapter1.html" class="start-btn">Start Exploring →</a>
-  </main>
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center h-screen text-center bg-gradient-to-b from-purple-100 via-pink-100 to-white pt-24 px-4">
+    <h2 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 fadeInUp">Welcome to My Portfolio</h2>
+    <p class="text-lg md:text-2xl text-gray-700 mb-10 max-w-2xl fadeInUp" style="animation-delay: 0.3s;">
+      A showcase of my journey through the <span class="font-semibold text-purple-700">Professional Skills</span> module.
+    </p>
+    <div class="bg-gradient-to-r from-blue-100 to-purple-100 shadow-xl rounded-2xl p-8 max-w-md w-full fadeInUp" style="animation-delay: 0.6s;">
+      <p class="text-2xl font-bold text-blue-900">Lasindu Anjana</p>
+      <p class="text-gray-600 mt-2">Registration ID: SA23416680</p>
+    </div>
+    <a href="chapters/Chapters Index.html" class="mt-10 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg rounded-full shadow-lg hover:from-purple-700 hover:to-pink-600 transition transform hover:scale-105 fadeInUp" style="animation-delay: 0.9s;">Start Exploring</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-600 to-purple-600 py-6 text-center mt-20">
+    <p class="text-white">&copy; 2025 Professional Skills Portfolio | Designed with ❤️</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".fadeInUp").forEach((el, index) => {
+        el.style.opacity = 0;
+        el.style.animationDelay = `${index * 0.2}s`;
+      });
+    });
+  </script>
 </body>
 </html>
