@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chapter 9 – Emotional Intelligence</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-slide { opacity: 0; transform: translateY(20px); animation: fadeSlide 1s ease-out forwards; }
+    @keyframes fadeSlide { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
 </head>
+
 <body class="bg-gray-50 font-sans text-gray-900">
 
   <!-- Navbar -->
-  <nav class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white p-4 shadow-md">
+  <nav class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white p-4 shadow-md fixed top-0 w-full z-10">
     <div class="container mx-auto flex justify-between items-center">
       <div class="font-bold text-lg">Professional Skills</div>
       <div class="space-x-6">
@@ -21,107 +28,100 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-12 text-center">
+  <header class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-16 text-center fade-slide mt-16">
     <h1 class="text-3xl font-bold">Chapter 9 – Emotional Intelligence</h1>
-    <p class="mt-2 text-lg">Understanding emotions and their role in personal and social success</p>
+    <p class="mt-2 text-lg" style="animation-delay:0.2s;">Understanding emotions and their role in personal and social success</p>
   </header>
 
-  <!-- Content Section -->
-  <main class="container mx-auto px-4 py-10">
-    <div class="bg-white rounded-2xl shadow-lg p-8 space-y-8">
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-10 space-y-8">
 
-      <!-- What is Emotion -->
-      <section>
-        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">What is Emotion?</h2>
-        <p>Emotion is a psychological state which involves:</p>
-        <ul class="list-disc list-inside space-y-1">
-          <li>Feeling component</li>
-          <li>Physiological response</li>
-          <li>Behavioural response</li>
-        </ul>
-      </section>
+    <!-- What is Emotion Card -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">What is Emotion?</h2>
+      <p>Emotion is a psychological state which involves:</p>
+      <ul class="list-disc list-inside space-y-1 text-gray-700">
+        <li>Feeling component</li>
+        <li>Physiological response</li>
+        <li>Behavioural response</li>
+      </ul>
+    </section>
 
-      <!-- Types of Emotions -->
-      <section>
-        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Types of Emotions</h2>
-        <p>Humans express two types of emotions:</p>
-        <div class="overflow-x-auto">
-          <table class="min-w-full border border-gray-300 rounded-lg overflow-hidden">
-            <thead class="bg-indigo-600 text-white">
-              <tr>
-                <th class="px-4 py-2">Primary</th>
-                <th class="px-4 py-2">Secondary</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr><td class="px-4 py-2">Sadness</td><td class="px-4 py-2">Grief</td></tr>
-              <tr><td class="px-4 py-2">Fear</td><td class="px-4 py-2">Anxiety</td></tr>
-              <tr><td class="px-4 py-2">Enjoyment</td><td class="px-4 py-2">Happiness</td></tr>
-              <tr><td class="px-4 py-2">Disgust</td><td class="px-4 py-2">Scorn</td></tr>
-              <tr><td class="px-4 py-2">Shame</td><td class="px-4 py-2">Embarrassment</td></tr>
-              <tr><td class="px-4 py-2">Surprise</td><td class="px-4 py-2">Guilt</td></tr>
-              <tr><td class="px-4 py-2">Love</td><td class="px-4 py-2">Joy</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- Emotional Expression -->
-      <section>
-        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">How People Show Emotions</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li>Voice</li>
-          <li>Breathing</li>
-          <li>Energy level</li>
-          <li>Muscle tone and movement</li>
-          <li>Skin, sweating</li>
-          <li>Facial expression</li>
-        </ul>
-      </section>
-
-      <!-- Emotional Intelligence -->
-      <section>
-        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">What is Emotional Intelligence?</h2>
-        <p>
-          Emotional intelligence is the ability to understand and manage your own emotions and those of others.
-          It allows you to navigate social situations, read other people, and develop lasting relationships.
-        </p>
-      </section>
-
-      <!-- EQ vs IQ -->
-      <section>
-        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">EQ vs IQ</h2>
-        <p>
-          <strong>IQ (Intelligence Quotient):</strong> Measures cognitive skills such as understanding, learning,
-          reasoning, and problem-solving. Evaluated through memory exercises, analogies, and puzzles.
-        </p>
-        <p>
-          <strong>EQ (Emotional Quotient):</strong> Measures your ability to comprehend, control, and utilize emotions
-          to achieve goals and build positive relationships.
-        </p>
-      </section>
-
-      <!-- Components of Emotional Intelligence -->
-      <section>
-        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Components of Emotional Intelligence</h2>
-        <ul class="list-disc list-inside space-y-2">
-          <li><strong>Social Skills:</strong> Communicating effectively in different situations</li>
-          <li><strong>Empathy:</strong> Understanding others</li>
-          <li><strong>Self-regulation:</strong> Mindfulness and acceptance</li>
-          <li><strong>Self-awareness:</strong> Understanding yourself better than others</li>
-        </ul>
-      </section>
-
-      <!-- Next Chapter Button -->
-      <div class="text-center mt-12 fade-slide">
-        <a href="chapter10.html"
-           class="px-10 py-4 bg-gradient-to-r from-green-600 to-purple-600 text-white text-lg rounded-full shadow-lg hover:from-purple-700 hover:to-pink-600 transition transform hover:scale-105">
-          Next Chapter
-        </a>
+    <!-- Types of Emotions Card -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide" style="animation-delay:0.2s;">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Types of Emotions</h2>
+      <p>Humans express two types of emotions:</p>
+      <div class="overflow-x-auto mt-4">
+        <table class="min-w-full border border-gray-300 rounded-lg overflow-hidden">
+          <thead class="bg-indigo-600 text-white">
+            <tr>
+              <th class="px-4 py-2">Primary</th>
+              <th class="px-4 py-2">Secondary</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr><td class="px-4 py-2">Sadness</td><td class="px-4 py-2">Grief</td></tr>
+            <tr><td class="px-4 py-2">Fear</td><td class="px-4 py-2">Anxiety</td></tr>
+            <tr><td class="px-4 py-2">Enjoyment</td><td class="px-4 py-2">Happiness</td></tr>
+            <tr><td class="px-4 py-2">Disgust</td><td class="px-4 py-2">Scorn</td></tr>
+            <tr><td class="px-4 py-2">Shame</td><td class="px-4 py-2">Embarrassment</td></tr>
+            <tr><td class="px-4 py-2">Surprise</td><td class="px-4 py-2">Guilt</td></tr>
+            <tr><td class="px-4 py-2">Love</td><td class="px-4 py-2">Joy</td></tr>
+          </tbody>
+        </table>
       </div>
+    </section>
 
+    <!-- Emotional Expression Card -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide" style="animation-delay:0.4s;">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">How People Show Emotions</h2>
+      <ul class="list-disc list-inside space-y-1 text-gray-700">
+        <li>Voice</li>
+        <li>Breathing</li>
+        <li>Energy level</li>
+        <li>Muscle tone and movement</li>
+        <li>Skin, sweating</li>
+        <li>Facial expression</li>
+      </ul>
+    </section>
+
+    <!-- Emotional Intelligence Card -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide" style="animation-delay:0.6s;">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">What is Emotional Intelligence?</h2>
+      <p>
+        Emotional intelligence is the ability to understand and manage your own emotions and those of others.
+        It allows you to navigate social situations, read other people, and develop lasting relationships.
+      </p>
+    </section>
+
+    <!-- EQ vs IQ Card -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide" style="animation-delay:0.8s;">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">EQ vs IQ</h2>
+      <p><strong>IQ (Intelligence Quotient):</strong> Measures cognitive skills such as understanding, learning, reasoning, and problem-solving.</p>
+      <p><strong>EQ (Emotional Quotient):</strong> Measures your ability to comprehend, control, and utilize emotions to achieve goals and build positive relationships.</p>
+    </section>
+
+    <!-- Components of Emotional Intelligence Card -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide" style="animation-delay:1s;">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Components of Emotional Intelligence</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li><strong>Social Skills:</strong> Communicating effectively in different situations</li>
+        <li><strong>Empathy:</strong> Understanding others</li>
+        <li><strong>Self-regulation:</strong> Mindfulness and acceptance</li>
+        <li><strong>Self-awareness:</strong> Understanding yourself better than others</li>
+      </ul>
+    </section>
+
+    <!-- Next Chapter Button -->
+    <div class="text-center mt-12 fade-slide" style="animation-delay:1.2s;">
+      <a href="chapter10.html"
+         class="px-10 py-4 bg-gradient-to-r from-green-600 to-purple-600 text-white text-lg rounded-full shadow-lg hover:from-purple-700 hover:to-pink-600 transition transform hover:scale-105">
+        Next Chapter
+      </a>
     </div>
+
   </main>
 
 </body>
+
 </html>
