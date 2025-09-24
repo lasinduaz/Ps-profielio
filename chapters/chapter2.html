@@ -1,0 +1,89 @@
+File path: portfolio-website/chapters/chapter2.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 2 – Portfolio Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-slide { opacity: 0; transform: translateY(20px); animation: fadeSlide 1s ease-out forwards; }
+    @keyframes fadeSlide { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-blue-600 to-purple-600 shadow fixed top-0 w-full z-10">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-extrabold tracking-tight text-white">Professional Skills</h1>
+      <ul class="flex space-x-6 text-white font-medium">
+        <li><a href="chapter-index.html" class="hover:text-yellow-300 transition">Chapters</a></li>
+        <li><a href="../index.html" class="hover:text-yellow-300 transition">Home</a></li>
+        <li><a href="../about.html" class="hover:text-yellow-300 transition">About Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-green-100 via-blue-100 to-purple-100 py-20 mt-16 rounded-b-3xl shadow-lg text-center">
+    <h2 class="text-5xl font-extrabold text-blue-700 fade-slide">Chapter 2 – Portfolio Management</h2>
+    <p class="text-lg text-gray-700 mt-4 fade-slide" style="animation-delay:0.2s;">Understand what a portfolio is and its types and uses.</p>
+  </section>
+
+  <!-- Content Section -->
+  <section class="container mx-auto px-4 py-12 space-y-12">
+
+    <!-- What is a Portfolio -->
+    <div class="bg-white rounded-3xl shadow-xl p-8 fade-slide">
+      <h3 class="text-2xl font-bold text-purple-700 mb-4">What is a Portfolio?</h3>
+      <p>A portfolio is a way for someone to <strong>showcase their skills, accomplishments, and experience</strong>. It is a curated collection of work that demonstrates a person's abilities in a practical and visual way.</p>
+    </div>
+
+    <!-- Uses of a Portfolio -->
+    <div class="bg-white rounded-3xl shadow-xl p-8 fade-slide" style="animation-delay:0.2s;">
+      <h3 class="text-2xl font-bold text-purple-700 mb-4">Uses of a Portfolio</h3>
+      <ul class="list-disc ml-6 mt-3 text-gray-700">
+        <li>Career Advancement: To highlight your expertise for a promotion or new role.</li>
+        <li>Educational Assessments: To demonstrate a student's learning and growth over time.</li>
+        <li>Teaching and Education: To serve as a tool for teachers to assess student progress.</li>
+        <li>Job Applications: To provide a visual and detailed supplement to a CV or resume.</li>
+      </ul>
+    </div>
+
+    <!-- Types of Portfolios -->
+    <div class="bg-white rounded-3xl shadow-xl p-8 fade-slide" style="animation-delay:0.4s;">
+      <h3 class="text-2xl font-bold text-purple-700 mb-4">Types of Portfolios</h3>
+      <ol class="list-decimal ml-6 mt-3 text-gray-700 space-y-2">
+        <li><strong>Personal Portfolio:</strong> A collection of personal works, achievements, skills, and talents. Common for creative fields like photography, writing, and multimedia.</li>
+        <li><strong>Assessment Portfolio:</strong> Showcases a student's learning, growth, and achievements over time. Used in educational settings.</li>
+        <li><strong>Employment Portfolio:</strong> Showcases work-related documentation, accomplishments, and professional skills. Useful for career development and job applications.</li>
+      </ol>
+    </div>
+
+    <!-- Online Platforms -->
+    <div class="bg-white rounded-3xl shadow-xl p-8 fade-slide" style="animation-delay:0.6s;">
+      <h3 class="text-2xl font-bold text-purple-700 mb-4">Online Platforms for Portfolios</h3>
+      <ul class="list-disc ml-6 mt-3 text-gray-700">
+        <li><strong>LinkedIn:</strong> Showcase skills and experience to connect with people and find jobs.</li>
+        <li><strong>GitHub:</strong> Display coding projects and contributions for developers.</li>
+        <li><strong>WordPress:</strong> Customizable website builder to present your skills and work.</li>
+      </ul>
+    </div>
+
+    <!-- Next Chapter Button -->
+    <div class="text-center mt-12 fade-slide" style="animation-delay:0.8s;">
+      <a href="chapter3.html" class="px-10 py-4 bg-gradient-to-r from-green-600 to-purple-600 text-white text-lg rounded-full shadow-lg hover:from-purple-700 hover:to-pink-600 transition transform hover:scale-105">Next Chapter</a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-600 to-purple-600 py-6 text-center mt-20">
+    <p class="text-white">&copy; 2025 Professional Skills Portfolio</p>
+  </footer>
+
+</body>
+</html>
