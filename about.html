@@ -1,5 +1,3 @@
-File path: portfolio-website/about.html
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +12,7 @@ File path: portfolio-website/about.html
     @keyframes fadeSlide { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
-<body class="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 font-sans">
+<body class="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 font-sans min-h-screen flex flex-col">
 
   <!-- Navbar -->
   <nav class="bg-gradient-to-r from-blue-600 to-purple-600 shadow fixed top-0 w-full z-10">
@@ -27,31 +25,37 @@ File path: portfolio-website/about.html
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="py-28 text-center fade-slide">
-    <h2 class="text-5xl font-extrabold text-blue-700">About Me</h2>
-    <p class="text-lg text-gray-700 mt-4">Learn more about me and my professional journey.</p>
-  </section>
+  <div class="flex-grow">
+    <!-- Hero Section -->
+    <section class="py-28 text-center fade-slide">
+      <h2 class="text-5xl font-extrabold text-blue-700">About Me</h2>
+      <p class="text-lg text-gray-700 mt-4">Learn more about me and my professional journey.</p>
+    </section>
 
-  <!-- Profile Section -->
-  <section class="container mx-auto px-4 py-12 fade-slide">
-    <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center space-y-6 md:w-2/3 mx-auto">
-      <!-- Profile Picture -->
-      <img src="../assets/images/profile.jpg" alt="Profile Picture" class="w-40 h-40 rounded-full shadow-lg">
-      
-      <!-- Full Name -->
-      <h3 class="text-3xl font-bold text-purple-700">L.A.A. Samarajeewa</h3>
-      
-      <!-- Registration ID -->
-      <p class="text-gray-700 text-lg">Registration ID: SA23416680</p>
-      
-      <!-- Social Links -->
-      <div class="flex space-x-6 mt-4">
-        <a href="https://www.linkedin.com/in/lasinduanj" target="_blank" class="text-blue-600 text-3xl hover:text-blue-800 transition"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:lasinduaz@gmail.com" class="text-red-600 text-3xl hover:text-red-800 transition"><i class="fas fa-envelope"></i></a>
+    <!-- Profile Section -->
+    <section class="container mx-auto px-4 py-12 fade-slide">
+      <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center space-y-6 md:w-2/3 mx-auto">
+        <!-- Profile Picture -->
+        <img 
+          src="../assets/images/profile.jpg" 
+          alt="Profile Picture" 
+          class="w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 max-w-[160px] max-h-[160px] rounded-full shadow-lg object-cover"
+        >
+        
+        <!-- Full Name -->
+        <h3 class="text-3xl font-bold text-purple-700">L.A.A. Samarajeewa</h3>
+        
+        <!-- Registration ID -->
+        <p class="text-gray-700 text-lg">Registration ID: SA23416680</p>
+        
+        <!-- Social Links -->
+        <div class="flex space-x-6 mt-4">
+          <a href="https://www.linkedin.com/in/lasinduanj" target="_blank" class="text-blue-600 text-3xl hover:text-blue-800 transition"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:lasinduaz@gmail.com" class="text-red-600 text-3xl hover:text-red-800 transition"><i class="fas fa-envelope"></i></a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-gradient-to-r from-blue-600 to-purple-600 py-6 text-center mt-20">
