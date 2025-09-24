@@ -3,57 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chapter 4 – Food Stalls</title>
+  <title>Chapter 4 – ARCSCU Keynote Speeches</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-    .fade-slide { opacity: 0; transform: translateY(20px); animation: fadeSlide 1s ease-out forwards; }
-    @keyframes fadeSlide { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-  </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50 font-sans text-gray-900">
 
   <!-- Navbar -->
-  <nav class="bg-gradient-to-r from-blue-600 to-purple-600 shadow fixed top-0 w-full z-10">
-    <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-2xl font-extrabold tracking-tight text-white">Professional Skills</h1>
-      <ul class="flex space-x-6 text-white font-medium">
-        <li><a href="../index.html" class="hover:text-yellow-300 transition">Home</a></li>
-        <li><a href="chapter-index.html" class="hover:text-yellow-300 transition">Chapters</a></li>
-        <li><a href="../about.html" class="hover:text-yellow-300 transition">About Me</a></li>
-      </ul>
+  <nav class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="font-bold text-lg">Professional Skills</div>
+      <div class="space-x-6">
+        <a href="../index.html" class="hover:underline">Home</a>
+        <a href="../chapters/Chapters Index.html" class="hover:underline">Chapters</a>
+        <a href="../about.html" class="hover:underline">About Me</a>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 py-20 mt-16 rounded-b-3xl shadow-lg text-center fade-slide">
-    <h2 class="text-5xl font-extrabold text-purple-700">Chapter 4</h2>
-    <p class="text-lg text-gray-700 mt-4">Food Stalls</p>
-  </section>
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-12 text-center">
+    <h1 class="text-3xl font-bold">Chapter 4 – ARCSCU Keynote Speeches</h1>
+    <p class="mt-2 text-lg">Summaries of the keynote speeches from the research conference</p>
+  </header>
 
-  <!-- Content -->
-  <section class="container mx-auto px-6 py-12 space-y-12">
+  <!-- Content Section -->
+  <main class="container mx-auto px-4 py-10">
+    <div class="bg-white rounded-2xl shadow-lg p-8 space-y-6">
 
-    <div class="bg-white p-8 rounded-3xl shadow-lg fade-slide">
-      <h3 class="text-2xl font-bold text-purple-700 mb-4">Food Stalls</h3>
-      <p class="text-gray-700 leading-relaxed">
-        We had a food stall in the university. We sold food and drinks. We had a lot of fun.
-      </p>
+      <section>
+        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">Overview</h2>
+        <p>
+          This session was based on the research conference we had on our campus. 
+          We were assigned to listen to the keynote speakers and summarize the 
+          main points elaborated in their speeches. 
+        </p>
+      </section>
+
+      <!-- PDF Button -->
+      <section>
+        <h2 class="text-2xl font-semibold text-indigo-600 mb-4">My Summary</h2>
+        <p class="mb-4">Click the button below to view my detailed PDF summary.</p>
+        <button 
+          onclick="togglePDF()" 
+          class="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-700 text-white font-medium rounded-lg shadow hover:scale-105 transition">
+          View Attached PDF
+        </button>
+
+        <!-- PDF Embed (hidden until button clicked) -->
+        <div id="pdfContainer" class="mt-6 hidden">
+          <iframe 
+            src="../assets/pdf/Research Conference SA23416680.pdf" 
+            width="100%" 
+            height="600px" 
+            class="w-full h-[600px] border-2 border-gray-200 rounded-lg">
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Next Chapter -->
+      <div class="text-right mt-8">
+        <a href="chapter5.html" 
+           class="inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-purple-700 transition">
+          Next Chapter →
+        </a>
+      </div>
     </div>
+  </main>
 
-    <!-- Next Chapter Button -->
-    <div class="text-center fade-slide">
-      <a href="chapter5.html" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold px-6 py-3 rounded-full shadow hover:shadow-lg transform hover:scale-105 transition">
-        Next Chapter →
-      </a>
-    </div>
-
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gradient-to-r from-blue-600 to-purple-600 py-6 text-center mt-20">
-    <p class="text-white">&copy; 2025 Professional Skills Portfolio</p>
-  </footer>
-
+  <script>
+    function togglePDF() {
+      const container = document.getElementById('pdfContainer');
+      container.classList.toggle('hidden');
+    }
+  </script>
 </body>
 </html>
