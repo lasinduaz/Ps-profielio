@@ -1,87 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Working</title>
-    <style>
-        /* General Body Styling */
-        body {
-            font-family: 'Helvetica Neue', sans-serif;
-            background: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #4B4A4A;
-        }
-
-        /* Container Styling */
-        .container {
-            text-align: center;
-            background: #fff;
-            padding: 50px 60px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            width: 100%;
-            font-size: 1.2em;
-            border: 1px solid #ddd;
-        }
-
-        /* Header Styling */
-        h1 {
-            font-size: 2.8em;
-            color: #c13d3d;
-            margin-bottom: 20px;
-            font-family: 'Georgia', serif;
-            text-transform: uppercase;
-        }
-
-        /* Paragraph Styling */
-        p {
-            font-size: 1.4em;
-            color: #6e6e6e;
-            line-height: 1.6;
-        }
-
-        /* Button Styling */
-        .button {
-            margin-top: 30px;
-            padding: 12px 25px;
-            background-color: #c13d3d;
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 50px;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #a03333;
-        }
-
-        /* Luxurious Touch */
-        .luxury {
-            font-family: 'Times New Roman', serif;
-            font-style: italic;
-            color: #3a3a3a;
-            font-size: 1.1em;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 10 – Professional, Telephone and Dining Etiquette</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-slide { opacity: 0; transform: translateY(16px); animation: fadeSlide 0.9s ease-out forwards; }
+    @keyframes fadeSlide { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
 </head>
-<body>
+<body class="bg-gray-50 font-sans text-gray-900">
 
-    <div class="container">
-        <h1>Oops! This Page is Not Working</h1>
-        <p>We apologize for the inconvenience. The page you are trying to access is temporarily unavailable.</p>
-        <a href="/" class="button">Go to Home Page</a>
-        <p class="luxury">Thank you for your patience and understanding.</p>
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white p-4 shadow-md fixed top-0 w-full z-20">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="font-bold text-lg">Professional Skills</div>
+      <div class="space-x-6">
+        <a href="../index.html" class="hover:underline">Home</a>
+        <a href="../chapter-index.html" class="hover:underline">Chapters</a>
+        <a href="../about.html" class="hover:underline">About Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-16 text-center mt-16 fade-slide">
+    <h1 class="text-3xl font-bold">Chapter 10 – Professional, Telephone and Dining Etiquette</h1>
+    <p class="mt-2 text-lg" style="animation-delay:0.15s;">
+      Understanding workplace etiquette when communicating and dining with colleagues.
+    </p>
+  </header>
+
+  <!-- Content -->
+  <main class="container mx-auto px-4 py-10 space-y-8">
+
+    <!-- Overview -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Overview</h2>
+      <p class="text-gray-700">
+        This chapter covers <strong>Telephone</strong> and <strong>Dining Etiquette</strong>.
+        These etiquettes are important professional manners when communicating with co-workers and
+        dining in workplace settings where you need to behave respectfully and professionally.
+      </p>
+    </section>
+
+    <!-- Telephone Etiquette -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide" style="animation-delay:0.15s;">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Telephone Etiquette</h2>
+      <p class="text-gray-700 mb-3">
+        Using etiquette in telecommunication is essential. When taking calls:
+      </p>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Need to speak very clearly with respect.</li>
+        <li>During the call, maintain courteous and professional behavior.</li>
+        <li>Avoid eating while on a call.</li>
+      </ul>
+
+      <p class="text-gray-700 mt-4">Also, when answering calls:</p>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Answer as soon as possible.</li>
+        <li>Use professional greetings when addressing people.</li>
+      </ul>
+
+      <p class="text-gray-700 mt-4">Manners when using the telephone:</p>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>When transferring a call, explain and ask permission before doing so.</li>
+        <li>When returning calls, always verify the person first.</li>
+      </ul>
+    </section>
+
+    <!-- Dining Etiquette -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-slide" style="animation-delay:0.3s;">
+      <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Dining Etiquette</h2>
+      <p class="text-gray-700 mb-3">
+        Dining etiquette refers to behaving in a professional manner at the table and when
+        interacting with others. This ensures a respectful dining experience with colleagues.
+      </p>
+
+      <p class="text-gray-700">Some common dining etiquettes:</p>
+      <ol class="list-decimal list-inside space-y-2 text-gray-700 mt-2">
+        <li><strong>Salt and Pepper Etiquette:</strong> Always pass salt and pepper together.</li>
+        <li><strong>Napkin Etiquette:</strong> Before starting to eat, place the napkin on your lap
+            after the host. Keep it neatly and use it to maintain a clean surface.</li>
+      </ol>
+
+      <h3 class="text-xl font-semibold text-gray-800 mt-4">Drinking Soup</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Dip the spoon away from yourself.</li>
+        <li>Sip quietly from the side of the spoon.</li>
+        <li>Do not blow on hot soup to cool it — this is considered impolite.</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold text-gray-800 mt-4">Cutlery Placement Signals</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li><strong>Finished:</strong> Fork and knife together at 4 o’clock.</li>
+        <li><strong>Pause:</strong> Knife and fork crossed.</li>
+        <li>Never place used cutlery back on the table.</li>
+      </ul>
+    </section>
+
+    <!-- Next Chapter -->
+    <div class="text-center mt-6 fade-slide" style="animation-delay:0.45s;">
+      <a href="chapter11.html"
+         class="px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg rounded-full shadow-lg hover:from-purple-700 hover:to-pink-600 transition transform hover:scale-105">
+        Next Chapter
+      </a>
     </div>
 
+  </main>
 </body>
 </html>
